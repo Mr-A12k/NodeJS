@@ -66,9 +66,6 @@ router.post('/createuser',async(req,res)=>{
         await edu.save()
         //console.log('educational details created..')
 
-
-        
-
         stud.educationaldet.push(edu._id)
         await stud.save()
       //  console.log("Student updated with eduactional details",stud)
